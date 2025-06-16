@@ -1,5 +1,7 @@
 "use client";
 
+export const dynamic = 'force-dynamic';
+
 import { cn } from "@/lib/utils";
 import { DotPattern } from "@/components/magicui/dot-pattern";
 import Image from "next/image";
@@ -16,7 +18,7 @@ import { GridBackground } from "@/components/GridBackground/GridBackground";
 import Footer from "@/components/Footer/Footer";
 import LikeButton from "@/components/LikeButton/LikeButton";
 
-export default function Page() {
+export default function Home() {
   const demoItems = [
     {
       link: "#",
