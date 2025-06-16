@@ -16,7 +16,7 @@ import { GridBackground } from "@/components/GridBackground/GridBackground";
 import Footer from "@/components/Footer/Footer";
 import LikeButton from "@/components/LikeButton/LikeButton";
 
-export default function Home() {
+export default function page() {
   const demoItems = [
     {
       link: "#",
