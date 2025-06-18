@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function WorkExperience() {
   return (
     <div className="min-h-screen bg-background flex flex-col items-center justify-center px-4 py-12">
-      <h2 className="text-4xl font-semibold mb-10">👨🏻‍💻 My Work Experience</h2>
+      <h2 className="sm:text-4xl text-3xl font-semibold mb-10">👨🏻‍💻 My Work Experience</h2>
 
       <div className="w-full max-w-3xl space-y-8">
          {/* Outlier.ai */}

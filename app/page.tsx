@@ -72,7 +72,7 @@ export default function Home() {
             </GradientText>
 
             <Image
-              src="https://github.com/shadcn.png"
+              src="/pavan.jpg"
               width={150}
               height={150}
               className="rounded-full z-10"
@@ -115,7 +115,7 @@ export default function Home() {
         id="about"
       >
         <CircularGallery
-          bend={3}
+          bend={1}
           textColor="#3b3b3b"
           borderRadius={0.06}
           items={[]}
@@ -144,6 +144,15 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
           <ProjectCard
+            title="BrewNexus - A Coffee Marketplace"
+            description="A coffee shop for meeting place and restobar"
+            details="A platform for coffee enthusiasts to discover and purchase unique coffee blends."
+            skills={["SEO", "UI", "Next.js", "Tailwind CSS", "TypeScript"]}
+            imageUrl="/projects/coffee.png"
+            projectLink="https://brewnexus.vercel.app/"
+          />
+
+          <ProjectCard
             title="E-Summit REC Web App"
             description="Event platform for REC"
             details="Built using React and Next.js. Increased event registrations by 50%."
@@ -168,6 +177,15 @@ export default function Home() {
             skills={["Kotlin", "Jetpack Compose", "Android"]}
             imageUrl="/projects/cupcake.png"
             projectLink="https://github.com/BhimaPavanTeja/CupCake"
+          />
+
+          <ProjectCard
+            title="Web Browser Startup Page"
+            description="Customized page for web browsers"
+            details="Easy access and download index.html file for a personalized browser experience."
+            skills={["HTML", "CSS", "JavaScript"]}
+            imageUrl="/projects/WebPage.png"
+            projectLink="https://github.com/BhimaPavanTeja/WebSearch"
           />
         </div>
       </div>

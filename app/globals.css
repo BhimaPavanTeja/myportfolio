@@ -128,3 +128,50 @@ html {
 * {
   cursor: none;
 }
+
+
+/* Custom scrollbar for light mode */
+::-webkit-scrollbar {
+  width: 12px;
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #111;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+::-webkit-scrollbar-corner {
+  background: #fff;
+}
+
+/* Custom scrollbar for dark mode */
+.dark ::-webkit-scrollbar {
+  background: #111;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
+}
+
+.dark ::-webkit-scrollbar-corner {
+  background: #111;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #111 #fff;
+}
+
+.dark * {
+  scrollbar-color: #fff #111;
+}
