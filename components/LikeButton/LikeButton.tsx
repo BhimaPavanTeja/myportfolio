@@ -60,9 +60,9 @@ export default function LikeButton() {
   };
 
   return (
-    <div className="flex items-center bg-gray-200 dark:bg-white border rounded-full opacity-80 backdrop-blur-sm shadow-md transition border-transparent hover:bg-pink-300">
+    <div className="flex items-center bg-gray-200 dark:bg-white border rounded-full opacity-80 backdrop-blur-sm shadow-md transition border-transparent hover:bg-pink-300"
+      onClick={handleLike}>
       <button
-        onClick={handleLike}
         disabled={liked}
         className="m-1"
       >
