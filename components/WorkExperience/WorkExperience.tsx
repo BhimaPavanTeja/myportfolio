@@ -9,6 +9,27 @@ export default function WorkExperience() {
       <h2 className="sm:text-4xl text-3xl font-semibold mb-10">👨🏻‍💻 My Work Experience</h2>
 
       <div className="w-full max-w-3xl space-y-8">
+
+        {/* CSI */}
+        <div className="flex items-center gap-4">
+          <Image
+            src="/logos/csi.png"
+            alt="CSI Logo"
+            width={48}
+            height={48}
+            className="rounded-xl"
+          />
+          <div className="flex flex-col">
+            <span className="font-medium text-lg">Technical Lead - CSI</span>
+            <span className="text-muted-foreground text-sm">Oct 2023 – Present</span>
+            <p className="text-sm text-muted-foreground">
+              Led technical initiatives and mentored students in software & hackathons.
+            </p>
+          </div>
+        </div>
+        <Separator />
+
+
          {/* Outlier.ai */}
         <div className="flex items-center gap-4">
           <Image
@@ -20,7 +41,7 @@ export default function WorkExperience() {
           />
           <div className="flex flex-col">
             <span className="font-medium text-lg">Frontend Expertise for AI - Outlier.ai</span>
-            <span className="text-muted-foreground text-sm">May 2025 – Present</span>
+            <span className="text-muted-foreground text-sm">May 2025 – Jun 2025</span>
             <p className="text-sm text-muted-foreground">
               Contributed to UI improvements for AI-driven platforms.
             </p>
@@ -64,25 +85,7 @@ export default function WorkExperience() {
             </p>
           </div>
         </div>
-        <Separator />
 
-        {/* CSI */}
-        <div className="flex items-center gap-4">
-          <Image
-            src="/logos/csi.png"
-            alt="CSI Logo"
-            width={48}
-            height={48}
-            className="rounded-xl"
-          />
-          <div className="flex flex-col">
-            <span className="font-medium text-lg">Technical Lead - CSI</span>
-            <span className="text-muted-foreground text-sm">Oct 2023 – Present</span>
-            <p className="text-sm text-muted-foreground">
-              Led technical initiatives and mentored students in software & hackathons.
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   );
