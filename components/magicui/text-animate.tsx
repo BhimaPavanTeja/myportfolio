@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion, MotionProps, Variants } from "motion/react";
-import { ElementType } from "react";
+import { ElementType, HTMLAttributes } from "react";
 
 type AnimationType = "text" | "word" | "character" | "line";
 type AnimationVariant =
@@ -17,7 +17,7 @@ type AnimationVariant =
   | "scaleUp"
   | "scaleDown";
 
-interface TextAnimateProps extends MotionProps {
+type TextAnimateProps = MotionProps & HTMLAttributes<HTMLElement> & {
   /**
    * The text content to animate
    */
@@ -62,7 +62,7 @@ interface TextAnimateProps extends MotionProps {
    * The animation preset to use
    */
   animation?: AnimationVariant;
-}
+};
 
 const staggerTimings: Record<AnimationType, number> = {
   text: 0.06,

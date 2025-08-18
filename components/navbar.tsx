@@ -65,7 +65,7 @@ const Icons = {
 const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: PencilIcon, label: "Blog" },
+    { href: "/blogs", icon: PencilIcon, label: "Blog" },
   ],
   contact: {
     social: {
@@ -95,7 +95,7 @@ const DATA = {
 
 export function NavBar() {
   return (
-    <div className="fixed bottom-0 left-0 right-0 pb-5 flex items-center justify-center bg-gradient-to-t from-background via-background/80 to-transparent">
+  <div className="fixed bottom-0 left-0 right-0 z-50 pb-5 flex items-center justify-center bg-gradient-to-t from-background via-background/80 to-transparent">
       <TooltipProvider>
       <Dock direction="middle">
         {DATA.navbar.map((item) => (
