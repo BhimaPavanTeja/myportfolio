@@ -144,6 +144,15 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
           <ProjectCard
+            title="Meeting Scribe - A Meeting Summarizer"
+            description="Summarizes the meet and gives short, crispy info."
+            details="Built with Next.js, it allows users to create summaries and share meeting notes seamlessly."
+            skills={["Next.js", "TypeScript", "GenAI"]}
+            imageUrl="/projects/meeting.png"
+            projectLink="https://meetingscribes.vercel.app/"
+          />
+
+          <ProjectCard
             title="BrewNexus - A Coffee Marketplace"
             description="A coffee shop for meeting place and restobar"
             details="A platform for coffee enthusiasts to discover and purchase unique coffee blends."
