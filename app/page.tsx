@@ -149,7 +149,7 @@ export default function Home() {
             details="Built with Next.js, it allows users to create summaries and share meeting notes seamlessly."
             skills={["Next.js", "TypeScript", "GenAI"]}
             imageUrl="/projects/meeting.png"
-            projectLink="https://meetingscribes.vercel.app/"
+            projectLink="https://meetingscribes.netlify.app/"
           />
 
           <ProjectCard
